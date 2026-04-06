@@ -154,7 +154,29 @@ console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let sayac = {};
+
+sayilar.forEach(function (sayi) {
+  if (sayac[sayi]) {
+    sayac[sayi]++;
+  } else {
+    sayac[sayi] = 1;
+  }
+});
+
+tekraredensayilar = [];
+
+for (let sayi in sayac) {
+  if (sayac[sayi] > 1) {
+    tekraredensayilar.push(
+      sayi + " sayısı " + sayac[sayi] + " kere tekrar edilmiştir"
+    );
+  }
+}
+
+console.log(tekraredensayilar);
+
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 

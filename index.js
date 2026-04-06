@@ -176,7 +176,7 @@ for (let sayi in sayac) {
 
 console.log(tekraredensayilar);
 
-
+console.log("Toplam eleman sayisi:" ,sayilar.length);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
